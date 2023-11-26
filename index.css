@@ -4,6 +4,32 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.git {
+    width: 25px;
+    height: 25px;
+    transition: ease all .5s;
+}
+
+.git:hover {
+    color: #fa8e2c;
+    width: 35px;
+    height: 35px;
+    transition: ease all .5s;
+}
+
+.lin {
+    width: 25px;
+    height: 25px;
+    transition: ease all .5s;
+}
+
+.lin:hover {
+    color: #0a66c2;
+    width: 35px;
+    height: 35px;
+    transition: ease all .5s;
+}
+
 #nav-div {
     width: 100%;
     height: fit-content;
@@ -12,6 +38,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#nav-div > h1 {
+    text-align: left !important;
+    margin-left: 3rem;
+    font-weight: 900;
 }
 
 @media screen and (min-width: 769px) {
@@ -31,6 +63,10 @@ body {
         display: flex;
         justify-content: center;
         gap: 5rem;
+    }
+
+    #nav-div > h1 {
+        display: none;
     }
 }
 
@@ -79,9 +115,52 @@ a {
     font-weight: 600;
 }
 
+#About-Me {
+    height: 50vh;
+    background-color: #e8e8e8;
+    border-radius: 32px;
+    margin-inline: auto;
+    margin-block: 5rem;
+    display: flex;
+    justify-content: stretch;
+}
 
+.abt-item {
+    width: 50%;
+    height: 100%;
+}
 
+#About-Me > .img {
+    background-image: url(./assets/images/Computer.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    aspect-ratio: 1360/891;
+    height: 250px;
+    width: auto;
+    border-radius: 12px;
+}
 
+#Computer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
+    left: 85%;
+    top: 70%;
+}
+
+.abt > label {
+    font-weight: 900;
+    color: #0a66c2;
+    font-size: 1.5rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
 
 
 
